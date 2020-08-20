@@ -1,0 +1,4 @@
+#Wed Jul 15 18:20:46 EEST 2020
+quiz=quiz.geeksforgeeks.org
+contribute=contribute.geeksforgeeks.org
+ide=ide.geeksforgeeks.org

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<entry key="quiz">quiz.geeksforgeeks.org</entry>
+<entry key="contribute">contribute.geeksforgeeks.org</entry>
+<entry key="ide">ide.geeksforgeeks.org</entry>
+</properties>
