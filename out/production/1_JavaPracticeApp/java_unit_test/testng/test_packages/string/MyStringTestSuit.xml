@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyStringTestSuite">
+
+<!--    <test name="TimeOut">-->
+<!--        <classes>-->
+<!--            <class name="java_unit_test.junit.test_packages.math.MyMathTest" />-->
+<!--            <class name="java_unit_test.junit.test_packages.math.MyMathTest" />-->
+<!--            <class name="java_unit_test.junit.test_packages.math.MyMathTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="test suite">
+        <groups>
+            <!--            <run>-->
+            <!--                <include name="Concatenation" />-->
+            <!--            </run>-->
+
+            <define name="All">
+                <include name="Concatenation" />
+                <include name="GetSubstring" />
+                <include name="Containing" />
+            </define>
+            <define name="ConcatenationAndContaining">
+                <include name="Concatenation" />
+                <include name="Containing" />
+            </define>
+<!--            <run>-->
+<!--                <include name="All" />-->
+<!--            </run>-->
+<!--            <run>-->
+<!--                <include name="ConcatenationAndContaining" />-->
+<!--            </run>-->
+
+            <run>
+                <include name="All" />
+                <exclude name="Containing"></exclude>
+            </run>
+
+        </groups>
+
+        <packages>
+            <package name="java_unit_test.testng.test_packages.string"/>
+        </packages>
+    </test>
+</suite>
