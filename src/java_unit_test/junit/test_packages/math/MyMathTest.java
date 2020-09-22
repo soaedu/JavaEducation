@@ -13,12 +13,10 @@ public class MyMathTest {
 
     @Before
     public void setup() {
-
     }
 
     @After
     public void tearDown() {
-
     }
 
     @Test
