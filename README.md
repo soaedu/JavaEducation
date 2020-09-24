@@ -1,2 +1,2 @@
-# JavaPractice
+# JavaEducation
 Apllication that consumes a lot of java code examples.
