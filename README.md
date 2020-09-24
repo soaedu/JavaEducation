@@ -1,2 +1,2 @@
 # JavaEducation
-Apllication that consumes a lot of java code examples.
+Application that consumes a lot of java code examples.
