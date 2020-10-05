@@ -1,5 +1,6 @@
 package design_pattern.behavioral.strategy.example2;
 
+// Strategy Client
 public class Painter {
     Graphics figure;
 
