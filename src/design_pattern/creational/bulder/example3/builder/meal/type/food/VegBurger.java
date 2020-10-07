@@ -1,0 +1,13 @@
+package design_pattern.creational.bulder.example3.builder.meal.type.food;
+
+public class VegBurger extends Burger {
+    @Override
+    public String name() {
+        return "Veg Burger";
+    }
+
+    @Override
+    public float price() {
+        return 25.0f;
+    }
+}
