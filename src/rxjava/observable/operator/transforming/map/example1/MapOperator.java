@@ -1,4 +1,4 @@
-package rxjava.observable.operator.transforming;
+package rxjava.observable.operator.transforming.map.example1;
 
 import io.reactivex.Observable;
 
