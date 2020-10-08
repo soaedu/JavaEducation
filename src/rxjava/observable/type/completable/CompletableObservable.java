@@ -1,25 +1,27 @@
-package rxjava.observable.single;
+package rxjava.observable.type.completable;
 
-import io.reactivex.Single;
+import io.reactivex.Completable;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.Disposable;
-import io.reactivex.observers.DisposableSingleObserver;
+import io.reactivex.observers.DisposableCompletableObserver;
 import io.reactivex.schedulers.Schedulers;
 
 import java.util.concurrent.TimeUnit;
 
-public class SingleObservable {
+public class CompletableObservable {
     public static void main(String[] args) throws InterruptedException {
-        //Create the observable
-        Single<String> single = Single.just("Hello RxJava!");
-
-        //Create an observer
-        Disposable disposable = single
+        Disposable disposable = Completable.complete()
                 .delay(2, TimeUnit.SECONDS, Schedulers.io())
-                .subscribeWith(new DisposableSingleObserver<String>() {
+                .subscribeWith(new DisposableCompletableObserver() {
                     @Override
-                    public void onSuccess(@NonNull String value) {
-                        System.out.println(value);
+                    protected void onStart() {
+                        super.onStart();
+                        System.out.println("Completable started");
+                    }
+
+                    @Override
+                    public void onComplete() {
+                        System.out.println("Completable completed");
                     }
 
                     @Override
@@ -27,6 +29,7 @@ public class SingleObservable {
                         throwable.printStackTrace();
                     }
                 });
+
         Thread.sleep(3000);
 
         //start observing

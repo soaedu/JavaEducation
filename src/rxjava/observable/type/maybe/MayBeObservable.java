@@ -1,4 +1,4 @@
-package rxjava.observable.maybe;
+package rxjava.observable.type.maybe;
 
 import io.reactivex.Maybe;
 import io.reactivex.annotations.NonNull;
