@@ -1,4 +1,4 @@
-package java_regular.data.type.classes.type.nested.static_nested;
+package java_regular.data.type.classes.type.nested.example1;
 
 public class OuterClass {
     static class InnerStaticNested {
